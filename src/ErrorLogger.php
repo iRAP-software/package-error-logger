@@ -19,7 +19,7 @@ class ErrorLogger
      * @param type $otherErrorHandlers - any other errorHandlers you also want to be triggered when
      *                                   there is an error.
      */
-    public function __construct(iRAP\Logging\LoggerInterface $logger, $serviceName, array $extraContext=array(), $otherErrorHandlers = array())
+    public function __construct(\iRAP\Logging\LoggerInterface $logger, $serviceName, array $extraContext=array(), $otherErrorHandlers = array())
     {
         /**
          * Convert a log error code/type to the appropriate loglevel.
