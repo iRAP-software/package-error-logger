@@ -70,7 +70,7 @@ class ErrorLogger
             );
             
             $allContext = array_merge($context, $extraContext);
-            $message = "There was an issue with: " . $serviceName . ". " . $errstr;
+            $message = "{$serviceName}: Issue: " . $errstr;
             $logLevel = $logLevelConterter($errorLevel);
             $logger->log($logLevel, $message, $allContext);
             
@@ -98,7 +98,7 @@ class ErrorLogger
                 
                 $allContext = array_merge($context, $extraContext);
 
-                $message = "There was a fatal error with the " . $serviceName . ". " . $error['message'];
+                $message = "{$serviceName}: Fatal Error: " . $error['message'];
                 $logger->log($logLevel, $message, $context);
             }
         };
