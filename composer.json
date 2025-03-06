@@ -15,7 +15,7 @@
     ],
     "require": {
         "php": ">=5.5.0",
-        "irap/logging": "dev-php8.4"
+        "irap/logging": "2.2.*"
     },
     "autoload": {
         "psr-4": {
