@@ -32,7 +32,6 @@ class ErrorLogger
             (
                    $logError == E_NOTICE
                 || $logError == E_USER_NOTICE
-                || $logError == E_STRICT
                 || $logError == E_DEPRECATED
                 || $logError == E_USER_DEPRECATED
             )
